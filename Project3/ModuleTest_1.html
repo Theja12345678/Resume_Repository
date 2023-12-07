@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="ModuleTest_1.css">
+</head>
+
+<body>
+  <main>
+    <div class="play">
+      <div id="scores">
+        <div class="first">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+
+        </div>
+        <div class="scoreboard">
+          <div class="score">
+            <h3>Computer<br>Score</h3>
+            <p class="comp">0</p>
+          </div>
+          <div class="score">
+            <h3>Your <br> Score</h3>
+            <p class="you">0</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="choices">
+        <div class="triangle-container">
+          <button data-id="rock" class="corner-button rockBtn">
+            
+            <img src="Group 4.png" alt="Rock" class="base rock-img" srcset="" />
+          </button>
+          <button data-id="scissor" class="corner-button scissorBtn">
+            
+            <img src="Group 1.png" alt="Scissors" class="base scissor-img" srcset="" />
+          </button>
+          <button data-id="paper" class="corner-button paperBtn">
+           
+            <img src="Group 2.png" alt="Paper" class="base paper-img" srcset="" />
+          </button>
+          <div class=" triangle-line-top-line" ><img src="Line 1.png" style=" width: 38vh;height: 1vh;margin-bottom: -12vh;margin-left: -16vh;"></div>
+          <div class=" triangle-line-left-line"><img src="Line 1.png" style=" width: 35.2vh;height: 1vh;margin-bottom:-30vh;margin-left: -3vh;transform: rotate(-58deg);margin-top: -8vh;"></div>
+          <div class=" triangle-line-right-line"><img src="Line 1.png" style="height: 1vh;width: 32.6vh;margin-bottom: -29vh;margin-left: -29vh;transform: rotate(60deg);"></div>
+           
+        </div>
+
+      </div>
+    </div>
+    <div class="rules-container">
+      <div class=" gameRules rulesBox">
+        <h3>Game Rules</h3>
+        <button class="close-btn">X</button>
+        <ul>
+          <li>
+            <span>Rock beats scissors, scissors beat paper, and paper beats rock</span>
+          </li>
+          <li>
+            <span>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+              scissors”</span>
+          </li>
+          <li>
+            <span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
+          </li>
+          <li>
+            <span>If both players lay down the same hand, each player lays down another hand</span>
+          </li>
+        </ul>
+      </div>
+      <div class="corner">
+        <button class="rules">RULES</button>
+        <button class="next button nextBtn">NEXT</button>
+      </div>
+    </div>
+  </main>
+  <script src="ModuleTest_1.js"></script>
+</body>
+
+</html>

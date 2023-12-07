@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Creating</title>
+        <link rel="stylesheet " href="new.css">
+        <script src="new.js"></script>
+
+    </head>
+    <body>
+        <div>
+            <h1 ><center>Registration Form</center></h1>
+            <hr>
+        </div>
+        <form class="formName">
+            <div id="IDname">
+               Name:<span style="color: red;">*</span>:<input type="text" name="Name" required>
+            </div><br>
+            <div id="EmailId">
+               Email Id:<span style="color: red;">*</span><input type="email" name="EmailId" required>
+            </div><br>
+            <div id="CONTACT">
+                Contact:<span style="color:red;">*</span><input type="number" name="Contact" required>
+             </div><br>
+             
+            <div id="genderId">
+                 Please select the genderId:
+                 <input type="radio" id="male" name="male" value="male"> 
+                 <label for="male">Male</label>
+                 <input type="radio" id="female" name="male" value="female"> 
+                 <label for="female">Female</label>                 <!--name should be same id should be unique -->
+            </div>
+            <div id="countryId">
+                Please select the CountryId:
+                <input type="radio" id="india" name="india" value="India"> 
+                <label for="india">India</label>
+                <input type="radio" id="china" name="india" value="China"> 
+                <label for="china">China</label> 
+                <input type="radio" id="USA" name="india" value="USA"> 
+                <label for="USA">USA</label> 
+                <input type="radio" id="Japan" name="india" value="Japan"> 
+                <label for="Japan">Japan</label>                <!--name should be same id should be unique -->
+           </div>
+            <div id="shiftId">
+                Select ShiftId:
+                <select>
+                    <option value="MorningShift">Morning</option>
+                    <option value="NightShift">Night</option>
+                </select>
+                 <br>
+            </div>
+            <div id="technologyID">Select Technology:
+               <input type="checkbox" id="inpl" name="checkbox">
+               <label for="inp1">Java</label>
+               <input type="checkbox" id="inp2" name="checkbox">
+               <label for="inp2">Sql</label>
+               
+               <input type="checkbox" id="inp3" name="checkbox">
+               <label for="inp3">Python</label>
+               <br>
+               Date:<input type="datetime-local">
+            </div>
+            <button class="btClass" type="submit" style="background-color: red;">Submit</button>
+            <button class="btClass" type="reset" style="background-color: green;">Cancel</button>
+        </form>
+
+        
+    </body>
+</html>

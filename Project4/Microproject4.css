@@ -1,0 +1,96 @@
+section{
+    text-align: center;
+    width: 35%;
+    margin-left: 37vw;
+    margin-top: 15vh;
+}
+   
+ h2{
+    color: #fff;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 5vh;
+ } 
+
+#equal{
+    color: #fff;
+    text-align: center;
+    width: 220px;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 12px;
+    background: #d13f30;
+}
+button{
+    color: #181f32;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 12px;
+    background:whitesmoke;
+    width: 100px;
+    margin: 1vh;
+    height: 60px;
+}
+#del{
+    color: #fff;
+    text-align: center;
+    
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 11.524px;
+   background: #647299;
+}
+#res{
+    color: #fff;
+    text-align: center;
+    width: 220px;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 12px;
+   background: #647299;
+
+}
+.keypad{
+border-radius: 12px;
+background: #252044;
+padding: 4vh  2vh;
+}
+.display{
+    border-radius: 12px;
+    background: #1a1f32;
+    margin-bottom: 3vh;
+padding: 2vh  3vh;
+color: #fff;
+text-align: right;
+font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.body{
+    
+    height: 575px;
+    background-size: initial;
+    justify-content: center;
+    align-items: center;
+    
+    }

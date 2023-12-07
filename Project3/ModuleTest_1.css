@@ -1,0 +1,453 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #8cc461;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    padding-top: 9vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .you{
+    font-size: 30px;
+    font-weight: 500;
+    
+  }
+  .comp{
+    font-size: 30px;
+    font-weight: 500;
+    
+  }
+  
+  button {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .play {
+    width: 50vw;
+    text-transform: uppercase;
+  }
+  
+  #scores {
+    display: flex;
+    border-radius: 13px;
+    border: 4px solid #fff;
+    background: rgba(28, 48, 120, 0);
+    width: 100%;
+    
+    justify-content: space-between;
+  }
+  
+  .first {
+    color: #fff;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 4px;
+    padding-left: 15px;
+  }
+  
+  .scoreboard {
+    display: flex;
+  }
+  .score {
+    width: 150px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 9px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .score > h3 {
+    color: #656565;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.7px;
+  }
+  
+  .count {
+    color: #252525;
+    margin-top: 33px;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0;
+  }
+  
+  .base {
+    position: absolute;
+    width: 50px;
+    top: -100px;
+    left: 40px;
+  }
+  
+  .corner {
+    width: 100%;
+    text-align: end;
+  }
+  
+  .rules-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .gameRules {
+    width: 300px;
+    margin: 10px;
+    border-radius: 13px;
+    border: 7px solid #fff;
+    background: #004429;
+    color: #fff;
+  }
+  
+  .gameRules h3 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 0%;
+    font-weight: 500;
+    margin: 30px auto 20px auto;
+  }
+  
+  ul {
+    list-style: square;
+    padding-left: 30px;
+  }
+  
+  ul li {
+    color: yellow;
+    padding: 9px 15px 9px 15px;
+    font-size: 13px;
+  }
+  
+  ul li::marker {
+    content: "■";
+    font-size: 16px;
+  }
+  
+  ul li span {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+  }
+  
+  .rulesBox {
+    display: none;
+  }
+  
+  .close-btn {
+    position: absolute;
+    font-family: "Dangrek", cursive;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    background: #ff0000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 0%;
+    top: -15px;
+    right: -15px;
+  }
+  
+  .rules {
+    margin: 10px;
+    padding: 6px 18px;
+    border-radius: 9px;
+    border: 2px solid #fff;
+    background: rgba(217, 217, 217, 0);
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+  
+  .next {
+    margin: 10px;
+    padding: 6px 18px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background: rgba(217, 217, 217, 0);
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.1px;
+  }
+  
+  .button {
+    display: none;
+  }
+  
+  .triangle-container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin: 100px auto;
+  }
+  
+  .corner-button {
+    position: absolute;
+    width: 120px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .base {
+    position: absolute;
+    
+  }
+  
+  .rock-img {
+    height: 180px;
+    width: 180px;
+    top: 55px;
+    left: 55px;
+    margin-left: -35vh;
+  }
+  
+  .scissor-img {
+    height: 180px;
+    width: 180px;
+    top: 53px;
+    left: 57px;
+  }
+  
+  .paper-img {
+    height: 180px;
+    width: 180px;
+    top: 50px;
+    margin-left: -20vh;
+    margin-top: 18vh;
+    left: 55px;
+  }
+  
+  .corner-button:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .corner-button:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+  
+  .corner-button:nth-child(3) {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .triangle-line {
+    position: absolute;
+    width: 120vh;
+    height: 340vh;
+    background: rgba(0, 0, 0, 0.64);
+    z-index: -1;
+  }
+  
+  
+  .round {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(46, 154, 37, 0.39);
+  }
+  
+  .circle1 {
+    width: 390px;
+    height: 390px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle2 {
+    width: 280px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle3 {
+    width: 340px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle4 {
+    width: 180px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .disc {
+    position: absolute;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+   
+  }
+  
+  
+  
+  .white {
+    
+    background-color: white;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .white img {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .result-frame p {
+    position: absolute;
+    top: 14%;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 0;
+    color: #fff;
+  }
+  
+  .playerPick {
+    left: 2.5%;
+    margin-left: -9vh;
+  }
+  
+  .computerPick {
+    right: 2.5%;
+    margin-right: -9vh;
+  }
+  
+  .result-frame {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+  }
+  
+  .box1 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    margin-top: 5vh;
+    transform: translate(-50%, -50%);
+  }
+  
+  .box1 h2 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 29px;
+  }
+  
+  .box1 h3 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 0;
+    font-weight: 500;
+  }
+  
+  .disc1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 180px;
+    width: 180px;
+    margin-top: -2vh;
+    margin-left: -16vh;
+  }
+  
+  .disc2 {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    height: 180px;
+    width: 180px;
+    margin-top: -2vh;
+    margin-right: -16vh;
+    
+  }
+  
+  .hurray-frame {
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+  
+  .hurray-imgs {
+    position: relative;
+  }
+  
+  .hurray-frame h1 {
+    font-size: 70px;
+    letter-spacing: 7px;
+    line-height: 50%;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  
+  .hurray-frame h3 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 10%;
+    font-weight: 500;
+  }
+  
+  .trophy {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    margin-left: 4vh;
+    transform: translate(-20%, 0%);
+  }
+  
+  .playAgain {
+    padding: 10px 28px;
+    border: none;
+    border-radius: 9px;
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+  
+  .hurrayPlayBtn {
+    margin: 40px auto 20px auto;
+  }
